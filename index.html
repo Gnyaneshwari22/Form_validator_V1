@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-container">
+      <form class="input-box-container">
+          <div class="input-box">
+            <label>Full Name:</label>
+            <input class="input-box1" type="text" placeholder="name" id="name-input" onkeyup="NameValidator()" />
+            <span id="name-error"></span>
+          </div>
+          <div class="input-box">
+            <label>Phone no:</label>
+            <input class="input-box1" type="tel" placeholder="1234567892"  id="number-input" onkeyup="NumberValidator()"/>
+            <span id="num-error"></span>
+          </div>
+          <div class="input-box">
+            <label>Email :</label>
+            <input class="input-box1" type="email" placeholder="example@gmail.com" id="email-input" onkeyup="EmailValidator()" />
+            <span id="email-error"></span>
+          </div>
+          <div class="input-box">
+            <label>Message:</label>
+            <textarea name="input-box1"  cols="20" rows="5"  class="input-box1" placeholder="Message" id="text-input" onkeyup="MessageValidator()" style="border-style:dashed"></textarea>
+            <span id="msg-error"></span>
+          </div>
+          <button id="btn-submit" onclick="return ValidateForm()">Submit</button> 
+          <span id="submitt-error"></span>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d3de94d02b.js" crossorigin="anonymous"></script>
+  </body>
+</html>
